@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+}
+
+body{
+    background-color: #ECE2DA;
+}
+
+/* Header */
+
+#header{
+    background-color: white;
+}
+
+.logo{
+    max-height: 19px;
+    padding-left: 37px;
+}
+
+#branding{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul, li{
+    display: flex;
+    justify-content: space-between;
+}
+
+#site-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu-item{
+    padding-right: 61px;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/* .menu-item-commander{
+    padding-left: 61px;
+    padding-right: 61px;
+    text-decoration: none;
+    color: white;
+    background-color: #DC9F96;
+    padding-top: 30px;
+    padding-bottom: 30px;
+} */
+
