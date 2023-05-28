@@ -25,21 +25,20 @@ body{
     justify-content: space-between;
 }
 
-.menu ul, li{
-    display: flex;
-    justify-content: space-between;
-}
-
 #site-title{
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.menu-item{
-    padding-right: 61px;
+.menu{
+    display: flex;
+    justify-content: space-between;
     gap: 60px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    vertical-align: center;
+    align-items: center;
+}
+
+.menu a{
     text-decoration: none;
     color: black;
 }
@@ -53,4 +52,18 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
 } */
+
+/* Footer */
+
+.footer {
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    background-color: #FFFFFF !important;
+ }
+
+ .footer a {
+    text-decoration: none;
+    color: black;
+ }
 
