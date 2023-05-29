@@ -20,7 +20,7 @@
                     <div class="menu_responsive">
                         <?php wp_nav_menu( 
                             array( 'theme_location' => 'main-menu', 
-                           'link_before' => '<div itemprop="name">', 
+                           'link_before' => '<div itemprop="name" class="menu-item">', 
                            'link_after' => '</div>' ) ); ?>
                     </div>
                 </nav>
