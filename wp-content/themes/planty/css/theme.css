@@ -93,17 +93,17 @@ label, #toggle
 
     nav
     {
-        height: 40px;
+        height: 60px;
     }
     
     .menu {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    background-color: #FFFFFF;
-    padding-right: 0px;
-    width: 100%;
-    z-index: 99;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 15px;
+        align-items: end;
+        background-color: #FFFFFF;
+        width: 100%;
+        z-index: 99;
     }
   
     .menu_responsive{
@@ -112,9 +112,13 @@ label, #toggle
         width: 100%;
     }
 
+    .menu-item{
+        padding: 10px;
+    }
+
     .menu-item-commander{
-        padding: 0px;
-        line-height: 20px;
+        padding: 0px 10px 0px 0px;
+        line-height: 30px;
         background-color: #FFFFFF;
     }
     
@@ -138,9 +142,9 @@ label, #toggle
     font-size: 40px;
     justify-content: center;
     align-items: stretch;
-    color: black;
+    color: #DC9F96;;
     cursor: pointer;
-    padding-right: 0px;
+    padding-right: 40px;
 }
 
 #toggle:checked + .menu_responsive {
