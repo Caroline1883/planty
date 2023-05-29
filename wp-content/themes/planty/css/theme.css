@@ -7,6 +7,8 @@ body * {
 
 body{
     background-color: #ECE2DA;
+    min-width: 320px;
+    max-width: 100%;
 }
 
 /* Header */
@@ -17,6 +19,7 @@ body{
 
 .logo{
     max-height: 19px;
+    max-width: 200px;
     padding-left: 37px;
 }
 
@@ -34,6 +37,7 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 60px;
+    line-height: 19px;
     vertical-align: center;
     align-items: center;
 }
@@ -43,15 +47,20 @@ body{
     color: black;
 }
 
-/* .menu-item-commander{
+.menu-item-commander{
     padding-left: 61px;
     padding-right: 61px;
+    background-color: #DC9F96;
+    padding-top: 31px;
+    padding-bottom: 30px;
+}
+
+.menu-item-commander a{
     text-decoration: none;
     color: white;
-    background-color: #DC9F96;
-    padding-top: 30px;
-    padding-bottom: 30px;
-} */
+}
+
+
 
 /* Footer */
 
@@ -67,3 +76,14 @@ body{
     color: black;
  }
 
+/* Mediaqueries */
+
+@media screen and (max-width : 920px) {
+    .menu {
+    flex-direction: column;
+    }
+    .logo{
+        max-width: 100%;
+        padding-left: 15px;
+    }
+}

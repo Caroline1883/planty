@@ -14,7 +14,10 @@
                         <a href="index.php"><img class="logo" src="http://localhost/planty/wp-content/uploads/2023/05/Logo.png" alt="Logo Planty" id="logo"></a>
                     </div>
                     <nav id="menu" class="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                        <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<div class="menu-item" itemprop="name">', 'link_after' => '</div>' ) ); ?>
+                        <?php wp_nav_menu( 
+                            array( 'theme_location' => 'main-menu', 
+                            'link_before' => '<div itemprop="name">', 
+                            'link_after' => '</div>' ) ); ?>
                     </nav>
             </header>
         <div id="container">
