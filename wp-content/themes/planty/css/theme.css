@@ -15,31 +15,23 @@ body{
 
 #header{
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
 }
 
 .logo{
-    max-height: 19px;
-    max-width: 200px;
     padding-left: 37px;
-}
-
-#branding{
-    display: flex;
-    justify-content: space-between;
-}
-
-#site-title{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: min(50vw, 200px);
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
     gap: 60px;
-    line-height: 19px;
-    vertical-align: center;
     align-items: center;
+    background-color: #FFFFFF;
 }
 
 .menu a{
@@ -53,12 +45,19 @@ body{
     background-color: #DC9F96;
     padding-top: 31px;
     padding-bottom: 30px;
+    line-height: 19px;
 }
 
 .menu-item-commander a{
     text-decoration: none;
     color: white;
 }
+
+label, #toggle
+{
+    display: none;
+} 
+
 
 
 
@@ -67,23 +66,70 @@ body{
 .footer {
     height: 60px;
     text-align: center;
-    align-items: center;
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
+ }
+
+ #copyright{
+    line-height: 60px;
  }
 
  .footer a {
     text-decoration: none;
     color: black;
+    margin: 0 auto;
  }
 
 /* Mediaqueries */
 
-@media screen and (max-width : 920px) {
+@media screen and (max-width : 782px) {
+
+    nav
+    {
+        height: 40px;
+    }
+    
     .menu {
     flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-right: 0px;
+    width: 100%;
+    z-index: 99;
     }
-    .logo{
-        max-width: 100%;
-        padding-left: 15px;
+  
+    .menu_responsive{
+        display: none;
+        flex-direction: column;
+        width: 100%;
     }
+
+    .menu-item-commander{
+        padding: 0px;
+        line-height: 20px;
+        background-color: #FFFFFF;
+}
+    
+    .menu-item-commander a{
+        text-decoration: none;
+        color: #DC9F96;
+    }
+
+
+
+    label{
+    width: 30px;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: stretch;
+    color: black;
+    cursor: pointer;
+    padding-right: 0px;
+}
+
+#toggle:checked + .menu_responsive {
+    display: flex;
+}
+
 }
