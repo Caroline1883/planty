@@ -7,8 +7,22 @@ body * {
 
 body{
     background-color: #ECE2DA;
+}
+
+body {
+    justify-content: center;
+    margin: auto;
+    padding: 0;
     min-width: 320px;
-    max-width: 100%;
+}
+
+.main-container {
+    max-width: 1440px;;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: #ECE2DA;
 }
 
 /* Header */
@@ -86,6 +100,56 @@ label, #toggle
     color: black;
     margin: 0 auto;
  }
+
+
+/* Mise en forme */
+
+h1 {
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Home */
+
+.canette-feuilles{
+    max-width: 1300px;
+    align-items: center;
+    height: 950px;
+}
+
+.feuilles-gauche{
+    position: absolute;
+    z-index: 99;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.feuilles-droite{
+    position: absolute;
+    z-index: 99;
+    top: 60%; 
+    left: 58%;
+    transform: translate(-50%,-50%);
+}
+
+.canette{
+    position: absolute;
+    height: 100%;
+    z-index: 99;
+    top: 100%;     
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 /* Mediaqueries */
 
