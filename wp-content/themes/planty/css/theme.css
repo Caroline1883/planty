@@ -129,16 +129,16 @@ h2 {
 .feuilles-gauche{
     position: absolute;
     z-index: 99;
-    top: 50%; 
-    left: 50%;
+    top: 87%; 
+    left: 38%;
     transform: translate(-50%,-50%);
 }
 
 .feuilles-droite{
     position: absolute;
     z-index: 99;
-    top: 60%; 
-    left: 58%;
+    top: 87%; 
+    left: 60%;
     transform: translate(-50%,-50%);
 }
 
@@ -148,7 +148,7 @@ h2 {
     z-index: 99;
     top: 100%;     
     left: 50%;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
 }
 
 /* Mediaqueries */
