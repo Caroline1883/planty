@@ -7,13 +7,11 @@ body * {
 
 body{
     background-color: #ECE2DA;
-}
-
-body {
     justify-content: center;
     margin: auto;
     padding: 0;
     min-width: 320px;
+    position: relative;
 }
 
 .main-container {
@@ -104,6 +102,11 @@ label, #toggle
 
 /* Mise en forme */
 
+/* Masquer par défaut le titre des pages */
+.entry-title{
+    display: none;
+}
+
 h1 {
     font-weight: 800;
     font-size: 38px;
@@ -116,12 +119,19 @@ h2 {
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
+    width: 60%;
 }
 
 /* Home */
 
+.h2-home{
+    color:#3B8E46;
+    margin: 82px auto;
+}
+
 .canette-feuilles{
-    height: 950px;
+    /* Pour contre-carrer le fait de ne pas avoir le rendu attendu */
+    height: 618px;
     position: relative;
     margin: auto;
 }
@@ -152,9 +162,10 @@ h2 {
 
 @media screen and (max-width : 782px) {
 
-    h1, h2 {
-        font-weight: 700;
-        font-size: 20px;
+   .h2-home {
+        margin: 40px 5px 0px 5px;
+        font-size: 25px;
+        width: 100%;
     }
     
     nav
@@ -218,7 +229,8 @@ h2 {
 }
 
     .canette-feuilles{
-    height: 500px;
+    /* height: 500px; */
+    display: block;
 }
 
     /* Mis en place pour contre-carrer un resizing non voulu toujours à droite */
