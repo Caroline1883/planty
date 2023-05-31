@@ -121,40 +121,42 @@ h2 {
 /* Home */
 
 .canette-feuilles{
-    max-width: 1300px;
-    align-items: center;
     height: 950px;
+    position: relative;
+    margin: auto;
 }
 
 .feuilles-gauche{
     position: absolute;
-    z-index: 99;
-    top: 87%; 
-    left: 38%;
+    top: 50%; 
+    left: 40%;
     transform: translate(-50%,-50%);
 }
 
 .feuilles-droite{
     position: absolute;
-    z-index: 99;
-    top: 87%; 
+    top: 50%; 
     left: 60%;
     transform: translate(-50%,-50%);
 }
 
 .canette{
     position: absolute;
-    height: 100%;
-    z-index: 99;
-    top: 100%;     
+    z-index: 1;
+    top: 50%;     
     left: 50%;
-    /* transform: translate(-50%,-50%); */
+    transform: translate(-50%,-50%);
 }
 
 /* Mediaqueries */
 
 @media screen and (max-width : 782px) {
 
+    h1, h2 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
     nav
     {
         height: 60px;
@@ -211,8 +213,19 @@ h2 {
     padding-right: 40px;
 }
 
-#toggle:checked + .menu_responsive {
+    #toggle:checked + .menu_responsive {
     display: flex;
 }
+
+    .canette-feuilles{
+    height: 500px;
+}
+
+    /* Mis en place pour contre-carrer un resizing non voulu toujours à droite */
+    .feuilles-droite, .feuilles-gauche{
+    width: 150px;
+}
+  
+
 
 }
