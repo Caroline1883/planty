@@ -11,7 +11,7 @@
             <header id="header" role="banner">
                 <div id="branding">
                     <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                        <a href="index.php"><img class="logo" src="http://localhost/planty/wp-content/uploads/2023/05/Logo.png" alt="Logo Planty" id="logo"></a>
+                        <a href="http://localhost/planty"><img class="logo" src="http://localhost/planty/wp-content/uploads/2023/05/Logo.png" alt="Logo Planty" id="logo"></a>
                     </div>
                 </div>
                 <nav id="menu" class="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
