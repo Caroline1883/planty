@@ -21,6 +21,7 @@ body{
     background-color: #ECE2DA;
 }
 
+
 /* Header */
 
 #header{
@@ -107,10 +108,18 @@ label, #toggle
 
 /*** Style des titres ***/
 
-h1, h2 {
+h1 {
     padding: 50px 15px 7px 15px;
     font-weight: 800;
     font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding: 50px 15px 7px 15px;
+    font-weight: 800;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -153,13 +162,15 @@ p{
 }
 
 
-
 /* Home */
+
+.home-zone0{
+    background-color: #ECE2DA;
+}
 
 /*** Home - Zone 1 ***/
 
 .home-zone1{
-    height: 80vh;
     width: 100%;
     overflow-x: hidden; 
     display: flex;
@@ -169,18 +180,18 @@ p{
     z-index: 3;
 }
 
-
 .home-zone1::before{
     content: "";
     position: absolute;
-    height: 80vh; 
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
     background-color: #ECE2DA;
-    border-radius: 0% 0% 30% 30%;
+    border-radius: 0% 0% 40% 40%;
     transform: scalex(1.5);
     border-bottom: 10px solid #E3D9D0;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .home-zone1 h2{
@@ -216,13 +227,11 @@ p{
 
 .home-zone2{
     background-color: #FFFFFF;
-    z-index: 1;
-    padding-bottom: 84px;
-    height: 415px;
+    padding-bottom: 82px;
 }
 
 .home-zone2 h3{
-    padding: 130px 5px 47px 5px;
+    padding: 70px 5px 28px 5px;
     color:#3B8E46;
 }
 
@@ -233,13 +242,29 @@ p{
 /*** Home - Zone 3 ***/
 
 .home-zone3{
-    background-color: #ECE2DA;
     padding-bottom: 29px;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 2; 
+}
+
+.home-zone3::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    background-color: #ECE2DA;
+    border-radius: 0% 0% 30% 30%;
+    transform: scalex(1.5);
+    z-index: 1;
 }
 
 .home-zone3 h2{
     color:#D2776A;
     padding-top: 58px;
+    z-index: 3;
+    position: relative;
 }
    
 .home-gallery{
@@ -250,6 +275,13 @@ p{
     /* gap: 30px !important;  */
     margin: auto;
     padding: 48px 0px;
+    z-index: 3;
+    position: relative;
+}
+
+.home-zone3 .planty-button, p{
+    position: relative;
+    z-index: 3;
 }
 
 /*** Home - Zone 4 ***/
@@ -264,9 +296,9 @@ p{
 }
 
 .reviews{
-    padding: 0px 135px;
+    padding: 0px 130px;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
     gap: 70px;
 
 }
