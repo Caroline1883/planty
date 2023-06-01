@@ -123,10 +123,14 @@ h3{
 }
 
 p{
+    padding: 0px 10px 0px 10px;
+    margin: auto;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
+
+
 
 /* Home */
 
@@ -191,15 +195,17 @@ p{
 .home-zone2{
     background-color: #FFFFFF;
     z-index: 1;
+    padding-bottom: 84px;
+    height: 415px;
 }
 
 .home-zone2 h3{
-    padding: 50px 0px;
+    padding: 130px 5px 47px 5px;
     color:#3B8E46;
 }
 
 .home-zone2 p{
-    padding-bottom: 84px;
+    max-width: 35%;
 }
      
 /*** Home - Zone 3 ***/
@@ -210,8 +216,20 @@ p{
 
 .home-zone3 h2{
     color:#D2776A;
+    padding-top: 58px;
 }
    
+.home-gallery{
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 30px !important;  */
+    margin: auto;
+    padding: 48px 0px;
+}
+
+
 
 
 /* Mediaqueries */
@@ -285,6 +303,10 @@ p{
 
 .home-zone0{
     display: none;
+}
+
+.home-zone2 p{
+    max-width: 100%
 }
 
 
