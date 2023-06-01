@@ -3,7 +3,6 @@
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
    font-family: 'Syne', sans-serif;
-   /* overflow-x: hidden; */
 }
 
 body{
@@ -135,40 +134,38 @@ p{
 
 .home-zone1{
     height: 80vh;
-    width: 100%; 
+    width: 100%;
+    overflow-x: hidden; 
     display: flex;
     justify-content: center; 
-    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: 3;
 }
+
 
 .home-zone1::before{
     content: "";
     position: absolute;
     height: 80vh; 
     width: 100%;
+    overflow-x: hidden;
     background-color: #ECE2DA;
     border-radius: 0% 0% 30% 30%;
     transform: scalex(1.5);
-}
-
-.home-zone1::after{
-    content: "";
-    position: absolute;
-    height: 81vh; 
-    z-index: -1; 
-    width: 100%;
-    background-color:#E3D9D0;
-    border-radius: 0% 0% 30% 30%;
-    transform: scalex(1.7);
+    border-bottom: 10px solid #E3D9D0;
+    z-index: 2;
 }
 
 .home-zone1 h2{
     color:#3B8E46;
     position: relative;
+    z-index: 4;
 }
 
 .canette-feuilles{
     position: relative;
+    z-index: 4;
     }
 
 .feuilles-gauche{
@@ -193,6 +190,7 @@ p{
 
 .home-zone2{
     background-color: #FFFFFF;
+    z-index: 1;
 }
 
 .home-zone2 h3{
