@@ -252,7 +252,48 @@ p{
     padding: 48px 0px;
 }
 
+/*** Home - Zone 4 ***/
 
+.home-zone4{
+    background-color: #FFFFFF;
+}
+
+.home-zone4 h2{
+    color:#3B8E46;
+    padding: 133px 5px 84px 5px;
+}
+
+.reviews{
+    padding: 0px 135px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 70px;
+
+}
+
+.review{
+    height: 139px;
+    width: 345px;
+    align-items: center;
+    gap: 20px;
+}
+
+.review p{
+    text-align: left;
+    height: 57px;
+    width: 196px;
+    padding: 11px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.review img{
+    object-fit: cover;
+}
+
+.review h3{
+    color:#3B8E46;
+    padding: 0px;
+}
 
 
 /* Mediaqueries */
