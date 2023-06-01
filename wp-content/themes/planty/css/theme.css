@@ -3,15 +3,14 @@
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
    font-family: 'Syne', sans-serif;
+   /* overflow-x: hidden; */
 }
 
 body{
-    background-color: #ECE2DA;
     justify-content: center;
     margin: auto;
     padding: 0;
     min-width: 320px;
-    position: relative;
 }
 
 .main-container {
@@ -102,39 +101,75 @@ label, #toggle
 
 /* Mise en forme */
 
-/* Masquer par défaut le titre des pages */
-.entry-title{
+/*** Masquer par défaut le titre des pages et l'URL modifier ***/
+.entry-title, .post-edit-link{
     display: none;
 }
 
-h1 {
+/*** Style des titres ***/
+
+h1, h2 {
+    padding: 50px 15px 7px 15px;
     font-weight: 800;
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
 }
 
-h2 {
-    font-weight: 800;
-    font-size: 38px;
+h3{
+    padding: 25px 7px 3px 7px;
+    font-weight: 700;
+    font-size: 30px;
     text-align: center;
-    text-transform: uppercase;
-    width: 60%;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* Home */
 
-.h2-home{
+/*** Home - Zone 1 ***/
+
+.home-zone1{
+    height: 80vh;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.home-zone1::before{
+    content: "";
+    position: absolute;
+    height: 80vh; 
+    width: 100%;
+    background-color: #ECE2DA;
+    border-radius: 0% 0% 30% 30%;
+    transform: scalex(1.5);
+}
+
+.home-zone1::after{
+    content: "";
+    position: absolute;
+    height: 81vh; 
+    z-index: -1; 
+    width: 100%;
+    background-color:#E3D9D0;
+    border-radius: 0% 0% 30% 30%;
+    transform: scalex(1.7);
+}
+
+.home-zone1 h2{
     color:#3B8E46;
-    margin: 82px auto;
+    position: relative;
 }
 
 .canette-feuilles{
-    /* Pour contre-carrer le fait de ne pas avoir le rendu attendu */
-    height: 618px;
     position: relative;
-    margin: auto;
-}
+    }
 
 .feuilles-gauche{
     position: absolute;
@@ -151,23 +186,45 @@ h2 {
 }
 
 .canette{
-    position: absolute;
-    z-index: 1;
-    top: 50%;     
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position: relative;
 }
+
+/*** Home - Zone 2 ***/
+
+.home-zone2{
+    background-color: #FFFFFF;
+}
+
+.home-zone2 h3{
+    padding: 50px 0px;
+    color:#3B8E46;
+}
+
+.home-zone2 p{
+    padding-bottom: 84px;
+}
+     
+/*** Home - Zone 3 ***/
+
+.home-zone3{
+    background-color: #ECE2DA;
+}
+
+.home-zone3 h2{
+    color:#D2776A;
+}
+   
+
 
 /* Mediaqueries */
 
 @media screen and (max-width : 782px) {
 
-   .h2-home {
-        margin: 40px 5px 0px 5px;
+   h2 {
         font-size: 25px;
         width: 100%;
     }
-    
+
     nav
     {
         height: 60px;
@@ -228,16 +285,9 @@ h2 {
     display: flex;
 }
 
-    .canette-feuilles{
-    /* height: 500px; */
-    display: block;
+.home-zone0{
+    display: none;
 }
-
-    /* Mis en place pour contre-carrer un resizing non voulu toujours à droite */
-    .feuilles-droite, .feuilles-gauche{
-    width: 150px;
-}
-  
 
 
 }
