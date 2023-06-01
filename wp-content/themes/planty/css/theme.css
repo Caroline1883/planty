@@ -302,11 +302,10 @@ p{
 }
 
 .reviews{
-    padding: 0px 130px;
+    padding: 0px 130px 135px 130px;
     margin: auto;
     justify-content: center;
     gap: 70px;
-
 }
 
 .review{
