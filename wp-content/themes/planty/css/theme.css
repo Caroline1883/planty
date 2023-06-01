@@ -130,6 +130,28 @@ p{
     text-align: center;
 }
 
+.planty-button a {
+    text-decoration: none;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
+}
+
+.planty-button {
+    line-height: 55px;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    background-color: #E0B9B4;
+    border-radius: 5px;
+}
+
 
 
 /* Home */
@@ -212,6 +234,7 @@ p{
 
 .home-zone3{
     background-color: #ECE2DA;
+    padding-bottom: 29px;
 }
 
 .home-zone3 h2{
