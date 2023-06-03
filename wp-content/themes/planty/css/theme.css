@@ -167,7 +167,7 @@ p{
     border-radius: 5px;
 }
 
-
+/*********************************************************************/
 /* Home */
 
 .home-zone0{
@@ -342,6 +342,56 @@ p{
     padding: 0px;
 }
 
+/*********************************************************************/
+/* Nous rencontrer */
+
+/* Zone 1 */
+.contact-zone1{
+
+}
+
+.contact-zone2{
+
+}
+
+.equipe{
+
+}
+
+.equipe-carte{
+
+}
+
+.contact-zone2{
+}
+
+.fleur1{
+
+}
+
+.fleur2{
+
+}
+
+/*********************************************************************/
+/* Commander */
+
+/* Zone 1 */
+.commander-titre{
+    background-color: #3B8E46;
+}
+
+.commander-titre h1{
+    color: #FFFFFF;
+    margin: auto;
+    padding: 69px 0px 69px 0px;
+}
+
+.commander-titre hr{
+    color:#FFFFFF;
+    padding-bottom: 50px;
+    max-width: 860px;
+}
 
 /* Mediaqueries */
 
