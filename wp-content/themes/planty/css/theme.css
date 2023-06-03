@@ -359,8 +359,9 @@ p strong{
     position: relative;
     width: 100%;
     z-index: 3 ;
-    /* overflow-x: hidden; */
-}
+    overflow-x: hidden;
+    box-sizing: border-box;
+} 
 
 .contact-zone1 h2{
     padding-top: 153px;
@@ -374,20 +375,21 @@ p strong{
     line-height: 24px;
     padding: 27px 0px 119px 0px;
     position: relative;
-}
+} 
 
 .contact-zone1::before{
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     z-index: 2 ;
     background-color: #ECE2DA;
     border-radius: 0% 0% 40% 40%;
     transform: scalex(1.5);
     box-sizing: border-box;
 }
+
 
 .fleur1{
     width: 155px;
@@ -428,8 +430,8 @@ p strong{
     width: 100%;
     z-index: 99;
     top: 100%; 
-    left: 185%;
-    transform: translate(-100%,-100%);
+    left: 80%;
+    transform: translate(0%,-100%);
 }
 
 .fleur3 img{
