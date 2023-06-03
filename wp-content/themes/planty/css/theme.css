@@ -145,6 +145,10 @@ p{
     text-align: center;
 }
 
+p strong{
+    font-weight: 700;
+}
+
 .planty-button a {
     text-decoration: none;
     margin: auto;
@@ -243,6 +247,7 @@ p{
 
 .home-zone2 p{
     max-width: 35%;
+    line-height: 24px;
 }
      
 /*** Home - Zone 3 ***/
@@ -345,28 +350,94 @@ p{
 /*********************************************************************/
 /* Nous rencontrer */
 
-/* Zone 1 */
+.contact-zone0{
+    background-color: #ECE2DA;
+}
+
+/* Zone 1 Nous rencontrer */
 .contact-zone1{
-
+    position: relative;
+    width: 100%;
+    z-index: 3 ;
+    overflow-x: hidden;
 }
 
-.contact-zone2{
-
+.contact-zone1 h2{
+    padding-top: 153px;
+    color:#D2776A;
+    position: relative;
+    z-index: 5;
 }
 
-.equipe{
-
+.contact-zone1 p{
+    max-width: 35%;
+    line-height: 24px;
+    padding: 27px 0px 119px 0px;
 }
 
-.equipe-carte{
-
-}
-
-.contact-zone2{
+.contact-zone1::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 2 ;
+    background-color: #ECE2DA;
+    border-radius: 0% 0% 40% 40%;
+    transform: scalex(1.5);
 }
 
 .fleur1{
+    width: 155px;
+    position: absolute;
+    z-index: 4;
+    top: 35%; 
+    left: 25%;
+    transform: translate(-50%,-50%);
+    }
 
+/* Zone 2 L'équipe */
+
+.contact-zone2{
+    padding-bottom: 81px;
+    position: relative;
+}
+
+.contact-zone2 h3{
+    line-height: 36px;
+    padding: 70px 0px 52px 0px;
+}
+
+.equipe{
+    gap: 123px;
+    justify-content: center;
+}
+
+.equipe-carte .wp-block-group__inner-container{
+    width: 167px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.fleur3{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 100%; 
+    left: 185%;
+    transform: translate(-100%,-100%);
+}
+
+.fleur3 img{
+    object-fit: cover;
+    height: 220px;
+    width: 192px;
+}
+
+.contact-zone3{
+    background-color: #ECE2DA;
 }
 
 .fleur2{
@@ -456,19 +527,28 @@ p{
     color: #DC9F96;;
     cursor: pointer;
     padding-right: 40px;
-}
+    }
 
     #toggle:checked + .menu_responsive {
     display: flex;
-}
+    }
 
-.home-zone0{
+    .home-zone0, 
+    .contact-zone0,
+    .fleur1, 
+    .fleur2,
+    .fleur3 {
     display: none;
-}
+    }
 
-.home-zone2 p{
+    .home-zone2,
+    .contact-zone1 p{
     max-width: 100%
-}
+    }
 
 
-}
+    .equipe{
+        gap: 20px;
+    }
+
+    }
