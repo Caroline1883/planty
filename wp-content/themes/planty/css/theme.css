@@ -64,7 +64,7 @@ body{
     color: white;
 }
 
-label, #toggle
+.menu label, #toggle
 {
     display: none;
 } 
@@ -169,6 +169,7 @@ p strong{
     align-items: center;
     background-color: #E0B9B4;
     border-radius: 5px;
+    color: white;
 }
 
 /*********************************************************************/
@@ -448,9 +449,40 @@ p strong{
     background-color: #ECE2DA;
 }
 
-.fleur2{
+/* Zone 3 Formulaire */
 
+.contact-zone3{
+    padding: 56px 5px 5px 61px;
 }
+
+
+
+.fleur2{
+}
+
+.contact-formulaire{
+    max-width: 383px;
+    padding-top: 23px;
+    margin: auto;
+}
+
+.contact-formulaire p{
+    padding-top: 22px;
+    text-align: start;
+}
+
+.contact-formulaire input{
+    width: 100%;
+    height: 71px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 13px;
+    padding: 10px; 
+    font-size: 20px;
+}
+
+
+
 
 /*********************************************************************/
 /* Commander */
@@ -526,7 +558,7 @@ p strong{
     }
 
 
-    label{
+    .menu label{
     width: 30px;
     display: flex;
     font-size: 40px;
