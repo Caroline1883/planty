@@ -13,7 +13,7 @@ body{
 }
 
 .main-container {
-    max-width: 1440px;;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 50px;
@@ -293,11 +293,11 @@ p strong{
 /* Comment éviter que 2 styles entrent en concurrence ? */
 
 .home-gallery-image{
-    max-width: 300px;
+    max-width: 393px;
 }
 
 .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
-    max-width: 300px;
+    max-width: 393px;
 }
 
 .home-zone3 .planty-button, p{
@@ -359,7 +359,7 @@ p strong{
     position: relative;
     width: 100%;
     z-index: 3 ;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .contact-zone1 h2{
@@ -373,6 +373,7 @@ p strong{
     max-width: 35%;
     line-height: 24px;
     padding: 27px 0px 119px 0px;
+    position: relative;
 }
 
 .contact-zone1::before{
@@ -380,11 +381,12 @@ p strong{
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     z-index: 2 ;
     background-color: #ECE2DA;
     border-radius: 0% 0% 40% 40%;
     transform: scalex(1.5);
+    box-sizing: border-box;
 }
 
 .fleur1{
