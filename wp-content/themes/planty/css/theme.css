@@ -452,18 +452,28 @@ p strong{
 /* Zone 3 Formulaire */
 
 .contact-zone3{
-    padding: 56px 5px 5px 61px;
+    padding: 56px 5px 73px 5px;
+    position: relative;
+    z-index: 1;
 }
 
-
+.contact-zone3 h3{
+    position: relative;
+}
 
 .fleur2{
+    position: absolute;
+    top: 75%;
+    left: 38%;
+    transform: translate(-50%, -50%);
 }
 
 .contact-formulaire{
     max-width: 383px;
     padding-top: 23px;
     margin: auto;
+    position: relative;
+    z-index:3;
 }
 
 .contact-formulaire p{
@@ -471,8 +481,7 @@ p strong{
     text-align: start;
 }
 
-.contact-formulaire input{
-    width: 100%;
+.contact-formulaire input, textarea{
     height: 71px;
     border: none;
     border-radius: 7px;
@@ -480,7 +489,19 @@ p strong{
     padding: 10px; 
     font-size: 20px;
 }
+.contact-formulaire .wpcf7-text, .wpcf7-textarea{
+    width: 100%;
+}
 
+.contact-formulaire .wpcf7-textarea{
+    height: 237px;
+}
+
+.contact-formulaire .wpcf7-submit{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 
 
 
