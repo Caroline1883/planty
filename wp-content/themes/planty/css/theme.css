@@ -533,7 +533,84 @@ p strong{
     max-width: 860px;
 }
 
-/* Formulaire */
+/* Zone Formulaire */
+
+.commander-formulaire{
+    background-color: #3B8E46;
+    color: #FFFFFF;
+    max-width: 860px;
+}
+
+.produits{
+    gap: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 193px;
+    margin: 10px;
+}
+
+.produit p{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.produit img{
+    height: 128px;
+    padding: 0px;
+}
+
+
+.produit_quantite{
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    width: 193px;
+}
+
+.produit_quantite_nbs{
+    display:flex;
+}
+
+.produit_quantite button{
+    border: none;
+}
+
+.produit_quantite_nb{
+    display: flex;
+    font-size: 16px;
+    line-height: 56px;
+    width: 51px;
+    border: none;
+    border-radius: 7px 0px 0px 7px;
+    padding: 0px;
+}
+
+.produit_quantite_plus_moins{
+    display: flex;
+    flex-direction: column;
+}
+
+.produit_quantite_plus_moins button{
+    width: 31px;
+    height: 28px;
+    line-height: 28px;
+
+}
+
+.produit-submit{
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
 
 
 
