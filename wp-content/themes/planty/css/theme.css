@@ -535,6 +535,12 @@ p strong{
 
 /* Zone Formulaire */
 
+/* input[type="text"]{
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 7px 0px 0px 7px;
+} */
+
 .commander-formulaire{
     background-color: #3B8E46;
     color: #FFFFFF;
@@ -554,6 +560,7 @@ p strong{
     flex-direction: column;
     width: 193px;
     margin: 10px;
+    gap: 15px;
 }
 
 .produit p{
@@ -571,7 +578,7 @@ p strong{
 .produit_quantite{
     display: flex;
     justify-content: space-between;
-    height: 51px;
+    height: 56px;
     width: 193px;
 }
 
@@ -579,18 +586,19 @@ p strong{
     display:flex;
 }
 
-.produit_quantite button{
-    border: none;
-}
 
 .produit_quantite_nb{
     display: flex;
+}
+
+.produit_quantite_nb input, text{
+    border-radius: 7px 0px 0px 7px;
     font-size: 16px;
-    line-height: 56px;
     width: 51px;
     border: none;
-    border-radius: 7px 0px 0px 7px;
-    padding: 0px;
+    line-height: 56px;
+    padding: 0px; 
+    text-align: center;
 }
 
 .produit_quantite_plus_moins{
@@ -602,7 +610,20 @@ p strong{
     width: 31px;
     height: 28px;
     line-height: 28px;
+    background-color: #DC9F96;
+}
 
+.plus{
+    border-radius: 0px 7px 0px 0px;
+    border-bottom: #FFFFFF solid 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.moins{
+    border-radius: 0px 0px 7px 0px;
+    border: none;
 }
 
 .produit-submit{
@@ -610,6 +631,8 @@ p strong{
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
+    line-height: 56px;
+    height: 56px;
 }
 
 
