@@ -181,6 +181,7 @@ p strong{
     color: white;
 }
 
+
 /*********************************************************************/
 /* Home */
 
@@ -652,6 +653,39 @@ margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.commander-formulaire2 input{
+    height: 71px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 13px;
+    padding: 10px; 
+    font-size: 20px;
+}
+.commander-formulaire2 .wpcf7-text, .wpcf7-textarea{
+    width: 383px;
+}
+
+.commander-formulaire2 .wpcf7-submit{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.commander-formulaire2-contenu{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 89px;
+}
+
+.commander-formulaire2-contenu p{
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 3Opx;
+}
+
 
 /* Mediaqueries */
 
