@@ -519,6 +519,8 @@ p strong{
 /* Zone 1 */
 .commander-titre{
     background-color: #3B8E46;
+    padding-bottom: 40px;
+    border: none;
 }
 
 .commander-titre h1{
@@ -529,29 +531,29 @@ p strong{
 
 .commander-titre hr{
     color:#FFFFFF;
-    padding-bottom: 50px;
     max-width: 860px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Zone Formulaire */
 
-/* input[type="text"]{
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 7px 0px 0px 7px;
-} */
+.commander-zone2{
+    background-color: #3B8E46;
+}
 
 .commander-formulaire{
-    background-color: #3B8E46;
     color: #FFFFFF;
-    max-width: 860px;
+    margin: auto;
 }
 
 .produits{
-    gap: 30px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .produit{
@@ -559,7 +561,6 @@ p strong{
     justify-content: space-between;
     flex-direction: column;
     width: 193px;
-    margin: 10px;
     gap: 15px;
 }
 
