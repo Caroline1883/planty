@@ -143,6 +143,7 @@ h3{
     font-weight: 700;
     font-size: 30px;
     text-align: center;
+    line-height: 36px;
 }
 
 p{
@@ -519,7 +520,6 @@ p strong{
 /* Zone 1 */
 .commander-titre{
     background-color: #3B8E46;
-    padding-bottom: 40px;
     border: none;
 }
 
@@ -543,9 +543,18 @@ p strong{
     background-color: #3B8E46;
 }
 
+.commander-zone2 h3{
+padding: 40px 0px;
+text-align: left;
+color: #FFFFFF;
+max-width: 860px;
+margin: auto;
+}
+
 .commander-formulaire{
     color: #FFFFFF;
     margin: auto;
+    padding-bottom: 40px;
 }
 
 .produits{
@@ -636,7 +645,13 @@ p strong{
     height: 56px;
 }
 
-
+.commander-zone2 hr{
+    color:#FFFFFF;
+    max-width: 860px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /* Mediaqueries */
 
