@@ -180,6 +180,10 @@ p strong{
     color: white;
 }
 
+.planty-button:hover{
+    background-color: #C02E44;
+}
+
 
 /*********************************************************************/
 /* Home */
