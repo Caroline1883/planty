@@ -147,7 +147,6 @@ h3{
 }
 
 p{
-    padding: 0px 10px 0px 10px;
     margin: auto;
     font-weight: 400;
     font-size: 20px;
@@ -542,14 +541,19 @@ p strong{
 
 .commander-zone2{
     background-color: #3B8E46;
+    padding-bottom: 93px;
 }
 
 .commander-zone2 h3{
-padding: 40px 0px;
-text-align: left;
-color: #FFFFFF;
-max-width: 860px;
-margin: auto;
+    padding: 40px 0px;
+    text-align: left;
+    color: #FFFFFF;
+    max-width: 860px;
+    margin: auto;
+}
+
+.commander-formulaire2 h3{
+    padding: 0px;    
 }
 
 .commander-formulaire{
@@ -651,7 +655,15 @@ margin: auto;
     max-width: 860px;
     margin: auto;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
+}
+
+.commander-formulaire2 hr{
+    color:#FFFFFF;
+    max-width: 1px;
+    max-height: 447px;
+    margin: 0px;
+    padding-bottom: 53px;
 }
 
 .commander-formulaire2 input{
@@ -676,6 +688,7 @@ margin: auto;
     display: flex;
     justify-content: center;
     margin: auto;
+    padding-bottom: 44px;
     flex-wrap: wrap;
     gap: 89px;
 }
@@ -683,8 +696,10 @@ margin: auto;
 .commander-formulaire2-contenu p{
     color: #FFFFFF;
     text-align: left;
-    padding-top: 3Opx;
+    padding-top: 30px;
 }
+
+
 
 
 /* Mediaqueries */
@@ -774,6 +789,10 @@ margin: auto;
 
     .equipe{
         gap: 20px;
+    }
+
+    .commander-zone2 h3{
+        text-align: center;
     }
 
     }
