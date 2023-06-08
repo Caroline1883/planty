@@ -531,6 +531,7 @@ p strong{
 
 .commander-titre hr{
     color:#FFFFFF;
+    background-color: #3B8E46;
     max-width: 860px;
     margin: auto;
     margin-top: 0px;
@@ -685,12 +686,13 @@ p strong{
 }
 
 .commander-formulaire2-contenu{
+    max-width: 860px;
     display: flex;
     justify-content: center;
     margin: auto;
     padding-bottom: 44px;
     flex-wrap: wrap;
-    gap: 89px;
+    gap: 44px;
 }
 
 .commander-formulaire2-contenu p{
@@ -791,8 +793,14 @@ p strong{
         gap: 20px;
     }
 
+    }
+
+
+@media screen and (max-width : 1000px) {
+    .commander-formulaire2 hr{
+    display:none;
+    }
     .commander-zone2 h3{
         text-align: center;
     }
-
-    }
+}
