@@ -219,7 +219,7 @@ p strong{
     box-sizing: border-box;
 }
 
-.home-zone1 h2{
+.home-zone1 h1{
     color:#3B8E46;
     position: relative;
     z-index: 4;
@@ -382,7 +382,7 @@ p strong{
     box-sizing: border-box;
 } 
 
-.contact-zone1 h2{
+.contact-zone1 h1{
     padding-top: 153px;
     color:#D2776A;
     position: relative;
