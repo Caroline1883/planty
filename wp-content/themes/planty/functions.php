@@ -8,7 +8,7 @@
 
     add_filter( 'wp_nav_menu_items', 'add_admin_to_nav_menu', 10, 2);
     function add_admin_to_nav_menu( $items, $args ) {
-    if (is_user_logged_in()) {
+    if (is_user_logged_in() && $args->theme_location==='main-menu') {
         while ( false !== ( $item_pos = strpos ( $items, '<li', 10 ) ) ) 
             {
                  $items_array[] = substr($items, 0, $item_pos);
