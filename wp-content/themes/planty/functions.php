@@ -15,7 +15,7 @@
                  $items = substr($items, $item_pos);
              }
             $items_array[] = $items;
-            array_splice($items_array, 1, 0, '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href=# itemprop="url"><div itemprop="name" class="menu-item">Admin</div></a></li>'); 
+            array_splice($items_array, 1, 0, '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="'.get_admin_url().'" itemprop="url"><div itemprop="name" class="menu-item">Admin</div></a></li>'); 
             $items = implode('', $items_array);
     }   
     return $items;
