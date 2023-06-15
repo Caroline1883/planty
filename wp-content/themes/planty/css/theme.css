@@ -500,7 +500,6 @@ p strong{
 .contact-formulaire p{
     padding-top: 25px;
     text-align: start;
-    padding
 }
 
 .contact-formulaire input, textarea{
@@ -526,7 +525,7 @@ p strong{
     display: flex;
     justify-content: center;
     line-height: 55px;
-    height: 55Px;
+    height: 55px;
     padding: 0px;
 }
 
@@ -560,7 +559,7 @@ p strong{
 
 .commander-zone2{
     background-color: #3B8E46;
-    padding-bottom: 93px;
+    padding-bottom: 69px;
 }
 
 .commander-zone2 h3{
@@ -701,6 +700,8 @@ p strong{
     margin: auto;
     display: flex;
     justify-content: center;
+    height: 55px;
+    padding: 0px;
 }
 
 .commander-formulaire2-contenu{
