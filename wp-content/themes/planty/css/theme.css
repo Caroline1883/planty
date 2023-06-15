@@ -315,7 +315,6 @@ p strong{
     position: relative;
 }
 
-/* Comment éviter que 2 styles entrent en concurrence ? Je supprime ma classe ? */
 
 .home-gallery-image{
     max-width: 393px;
