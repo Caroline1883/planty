@@ -21,5 +21,14 @@
     return $items;
     }
 
+    add_theme_support( 
+        'custom-logo',
+        array(
+        'flex-height'          => true,
+        'flex-width'           => true,
+        'unlink-homepage-logo' => true, 
+        )
+        );
+
 
 ?>
