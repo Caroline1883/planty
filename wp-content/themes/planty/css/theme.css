@@ -102,13 +102,13 @@ body{
 
  .canettes{
     height: 129px;
-    background-image: url("http://localhost/planty/wp-content/uploads/2023/06/Group-8-e1685660424840.png");
+    background-image: url("../img/canettes.png");
     background-repeat: repeat-x;
 }
 
 .canettes-sable{
     height: 129px;
-    background-image: url("http://localhost/planty/wp-content/uploads/2023/06/Group-8-e1685660424840.png");
+    background-image: url("../img/canettes.png");
     background-repeat: repeat-x;
     background-color: #ECE2DA;
 }
