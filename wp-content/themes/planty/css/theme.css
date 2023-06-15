@@ -158,15 +158,6 @@ p strong{
     font-weight: 700;
 }
 
-.planty-button a {
-    text-decoration: none;
-    margin: auto;
-    padding: 0px;
-    box-sizing: border-box;
-    color: white;
-    font-size: 15px;
-}
-
 .planty-button {
     line-height: 55px;
     margin: auto;
@@ -183,6 +174,15 @@ p strong{
 
 .planty-button p {
     padding: 0px;
+}
+
+.planty-button a {
+    text-decoration: none;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 15px;
 }
 
 .planty-button:hover{
@@ -418,7 +418,7 @@ p strong{
     position: absolute;
     z-index: 4;
     top: 35%; 
-    left: 25%;
+    left: 15%;
     transform: translate(-50%,-50%);
     }
 
@@ -435,7 +435,7 @@ p strong{
 }
 
 .equipe{
-    gap: 123px;
+    gap: 157px;
     justify-content: center;
 }
 
@@ -447,12 +447,16 @@ p strong{
     justify-content: space-between;    
 }
 
+.equipe strong{
+    line-height: 35px;
+}
+
 .fleur3{
     position: absolute;
     width: 192px;
     z-index: 99;
     top: 100%; 
-    left: 80%;
+    left: 83%;
     transform: translate(0%,-100%);
 }
 
@@ -469,7 +473,7 @@ p strong{
 /* Zone 3 Formulaire */
 
 .contact-zone3{
-    padding: 56px 5px 73px 5px;
+    padding: 56px 5px 49px 5px;
     position: relative;
     z-index: 1;
 }
@@ -480,22 +484,23 @@ p strong{
 
 .fleur2{
     position: absolute;
-    top: 75%;
+    top: 77%;
     left: 38%;
     transform: translate(-50%, -50%);
 }
 
 .contact-formulaire{
     max-width: 383px;
-    padding-top: 23px;
+    padding-top: 17px;
     margin: auto;
     position: relative;
     z-index:3;
 }
 
 .contact-formulaire p{
-    padding-top: 22px;
+    padding-top: 25px;
     text-align: start;
+    padding
 }
 
 .contact-formulaire input, textarea{
@@ -506,6 +511,8 @@ p strong{
     padding: 10px; 
     font-size: 20px;
 }
+
+
 .contact-formulaire .wpcf7-text, .wpcf7-textarea{
     width: 100%;
 }
@@ -518,6 +525,9 @@ p strong{
     margin: auto;
     display: flex;
     justify-content: center;
+    line-height: 55px;
+    height: 55Px;
+    padding: 0px;
 }
 
 
