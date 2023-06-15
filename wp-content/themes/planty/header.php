@@ -11,7 +11,12 @@
             <header id="header" role="banner">
                 <div id="branding">
                     <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                        <a href="http://localhost/planty"><img class="logo" src="http://localhost/planty/wp-content/uploads/2023/05/Logo.png" alt="Logo Planty" id="logo"></a>
+                        <?php if(has_custom_logo()) { ?>
+                            <?php echo get_custom_logo(); ?>
+                        <?php } else { ?>
+                            <a href="http://localhost/planty"><img class="logo" src="<?php echo get_stylesheet_directory_uri() . '/img/Logo.png'; ?>" alt="Logo Planty" id="logo"></a>
+                        <?php } ?>
+                        <!-- <a href="http://localhost/planty"><img class="logo" src="http://localhost/planty/wp-content/uploads/2023/05/Logo.png" alt="Logo Planty" id="logo"></a> -->
                     </div>
                 </div>
                 <nav id="menu" class="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
