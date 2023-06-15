@@ -172,13 +172,17 @@ p strong{
     margin: auto;
     padding: 0px;
     box-sizing: border-box;
-    width: 200px;
+    width: 198px;
     height: 55px;
     text-align: center;
     align-items: center;
     background-color: #E0B9B4;
     border-radius: 5px;
     color: white;
+}
+
+.planty-button p {
+    padding: 0px;
 }
 
 .planty-button:hover{
@@ -260,12 +264,12 @@ p strong{
 }
 
 .home-zone2 h3{
-    padding: 70px 5px 28px 5px;
+    padding: 70px 5px 42px 5px;
     color:#3B8E46;
 }
 
 .home-zone2 p{
-    max-width: 35%;
+    max-width: 497px;
     line-height: 24px;
 }
      
