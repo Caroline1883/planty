@@ -769,7 +769,7 @@ p strong{
     .menu_responsive{
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 160px%;
     }
 
     .menu-item{
@@ -833,6 +833,10 @@ p strong{
 
     .equipe{
         gap: 20px;
+    }
+
+    .review img{
+        display: none;
     }
 
     .commander-formulaire2 .wpcf7-text, .wpcf7-textarea {
