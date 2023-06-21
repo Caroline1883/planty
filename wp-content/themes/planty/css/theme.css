@@ -769,7 +769,7 @@ p strong{
     .menu_responsive{
         display: none;
         flex-direction: column;
-        width: 160px%;
+        width: 160px;
     }
 
     .menu-item{
