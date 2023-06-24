@@ -835,8 +835,17 @@ p strong{
         gap: 20px;
     }
 
+    .review{
+        flex-direction: column;
+        height: auto;
+    }
+
     .review img{
-        display: none;
+        display: block;
+    }
+
+    .review p{
+        text-align: center;
     }
 
     .commander-formulaire2 .wpcf7-text, .wpcf7-textarea {
